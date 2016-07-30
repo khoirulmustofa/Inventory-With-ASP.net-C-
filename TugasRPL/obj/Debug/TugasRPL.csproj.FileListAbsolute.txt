@@ -1,0 +1,7 @@
+c:\users\khoirul mustofa\documents\visual studio 2012\Projects\TugasRPL\TugasRPL\bin\TugasRPL.dll
+c:\users\khoirul mustofa\documents\visual studio 2012\Projects\TugasRPL\TugasRPL\bin\TugasRPL.pdb
+c:\users\khoirul mustofa\documents\visual studio 2012\Projects\TugasRPL\TugasRPL\obj\Debug\TugasRPL.dll
+c:\users\khoirul mustofa\documents\visual studio 2012\Projects\TugasRPL\TugasRPL\obj\Debug\TugasRPL.pdb
+C:\Users\khoirul mustofa\Documents\Visual Studio 2012\Projects\TugasRPL\TugasRPL\obj\Debug\RdlCompile.cache
+C:\Users\khoirul mustofa\Documents\Visual Studio 2012\Projects\TugasRPL\TugasRPL\obj\Debug\RdlCompile.compiled
+C:\Users\khoirul mustofa\Documents\Visual Studio 2012\Projects\TugasRPL\TugasRPL\obj\Debug\TugasRPL.csprojResolveAssemblyReference.cache

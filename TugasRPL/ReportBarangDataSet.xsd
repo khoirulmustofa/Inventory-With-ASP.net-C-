@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReportBarangDataSet" targetNamespace="http://tempuri.org/ReportBarangDataSet.xsd" xmlns:mstns="http://tempuri.org/ReportBarangDataSet.xsd" xmlns="http://tempuri.org/ReportBarangDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="TOKOWEBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="TOKOWEBConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.TOKOWEBConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vlaporanbarangTableAdapter" GeneratorDataComponentClassName="vlaporanbarangTableAdapter" Name="vlaporanbarang" UserDataComponentName="vlaporanbarangTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TOKOWEBConnectionString (Web.config)" DbObjectName="TOKOWEB.dbo.vlaporanbarang" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT KODE_BARANG, NAMA_BARANG, STOK, HARGA, NAMA_SUPPLIER FROM dbo.vlaporanbarang</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="KODE_BARANG" DataSetColumn="KODE_BARANG" />
+              <Mapping SourceColumn="NAMA_BARANG" DataSetColumn="NAMA_BARANG" />
+              <Mapping SourceColumn="STOK" DataSetColumn="STOK" />
+              <Mapping SourceColumn="HARGA" DataSetColumn="HARGA" />
+              <Mapping SourceColumn="NAMA_SUPPLIER" DataSetColumn="NAMA_SUPPLIER" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ReportBarangDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="ReportBarangDataSet" msprop:Generator_UserDSName="ReportBarangDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vlaporanbarang" msprop:Generator_TableClassName="vlaporanbarangDataTable" msprop:Generator_TableVarName="tablevlaporanbarang" msprop:Generator_TablePropName="vlaporanbarang" msprop:Generator_RowDeletingName="vlaporanbarangRowDeleting" msprop:Generator_RowChangingName="vlaporanbarangRowChanging" msprop:Generator_RowEvHandlerName="vlaporanbarangRowChangeEventHandler" msprop:Generator_RowDeletedName="vlaporanbarangRowDeleted" msprop:Generator_UserTableName="vlaporanbarang" msprop:Generator_RowChangedName="vlaporanbarangRowChanged" msprop:Generator_RowEvArgName="vlaporanbarangRowChangeEvent" msprop:Generator_RowClassName="vlaporanbarangRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="KODE_BARANG" msprop:Generator_ColumnVarNameInTable="columnKODE_BARANG" msprop:Generator_ColumnPropNameInRow="KODE_BARANG" msprop:Generator_ColumnPropNameInTable="KODE_BARANGColumn" msprop:Generator_UserColumnName="KODE_BARANG">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NAMA_BARANG" msprop:Generator_ColumnVarNameInTable="columnNAMA_BARANG" msprop:Generator_ColumnPropNameInRow="NAMA_BARANG" msprop:Generator_ColumnPropNameInTable="NAMA_BARANGColumn" msprop:Generator_UserColumnName="NAMA_BARANG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STOK" msprop:Generator_ColumnVarNameInTable="columnSTOK" msprop:Generator_ColumnPropNameInRow="STOK" msprop:Generator_ColumnPropNameInTable="STOKColumn" msprop:Generator_UserColumnName="STOK" type="xs:int" minOccurs="0" />
+              <xs:element name="HARGA" msprop:Generator_ColumnVarNameInTable="columnHARGA" msprop:Generator_ColumnPropNameInRow="HARGA" msprop:Generator_ColumnPropNameInTable="HARGAColumn" msprop:Generator_UserColumnName="HARGA" type="xs:int" minOccurs="0" />
+              <xs:element name="NAMA_SUPPLIER" msprop:Generator_ColumnVarNameInTable="columnNAMA_SUPPLIER" msprop:Generator_ColumnPropNameInRow="NAMA_SUPPLIER" msprop:Generator_ColumnPropNameInTable="NAMA_SUPPLIERColumn" msprop:Generator_UserColumnName="NAMA_SUPPLIER" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vlaporanbarang" />
+      <xs:field xpath="mstns:KODE_BARANG" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
